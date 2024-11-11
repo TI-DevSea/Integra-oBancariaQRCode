@@ -59,9 +59,9 @@ interface SantanderData {
   valor: number; // Valor do PIX
   descricao: string; // Descrição da cobrança
   identificador: string; // Identificador único
-  S_CNPJ_CPF: string; // Documento do pagador
-  S_NOME_CLIENTE: string; // Nome do pagador
-  S_PEDIDO: string; // Número do pedido
+  CNPJ_CPF: string; // Documento do pagador
+  NOME_CLIENTE: string; // Nome do pagador
+  PEDIDO: string; // Número do pedido
 }
 
 // Retorno
@@ -113,9 +113,9 @@ const pixData = {
   valor: 100.0,
   descricao: "Pagamento Pedido #123",
   identificador: "ID123",
-  S_CNPJ_CPF: "12345678901",
-  S_NOME_CLIENTE: "João Silva",
-  S_PEDIDO: "123",
+  CNPJ_CPF: "12345678901",
+  NOME_CLIENTE: "João Silva",
+  PEDIDO: "123",
 };
 
 const result = await generatePixSantander(pixData);
